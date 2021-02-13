@@ -1,0 +1,49 @@
+---
+title: "direct_connect_mysql"
+author: "Tage N Singh"
+date: "2/11/2021"
+output: html_document
+---
+
+
+
+```{r load-packages, message=FALSE}
+
+install.packages("pacman",repos = "http://cran.us.r-project.org")
+
+pacman::p_load(dplyr,tidyr,RMySQL,config)
+
+library(RMySQL,dplyr,tidyr)
+
+```
+
+
+```{r mysql-connect, message=TRUE, warning=TRUE}
+
+mydb = dbConnect(MySQL(), user='localtest', password='Localtest!', dbname='shows', host='localhost')
+
+#mydb = dbConnect(MySQL(), user='cunysps', password='Data607!$cU#Ny', dbname='flights', host='136.56.42.109')
+
+dbListTables(mydb)
+
+dbListFields(mydb, 'netflixratings')
+
+dbListFields(mydb, 'survey')
+
+
+rs = dbSendQuery(mydb, "SELECT * FROM survey")
+
+data = fetch(rs, n=-4)
+
+data
+
+
+rs = dbSendQuery(mydb, "SELECT * FROM netflixratings")
+
+data = fetch(rs, n=4)
+
+data
+
+
+```
+
