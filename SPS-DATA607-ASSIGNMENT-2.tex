@@ -1,0 +1,292 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={SPS-DATA607-ASSIGNMENT-2},
+  pdfauthor={Tage N Singh},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{SPS-DATA607-ASSIGNMENT-2}
+\author{Tage N Singh}
+\date{2021-02-13}
+
+\begin{document}
+\maketitle
+
+\hypertarget{multi-table-survey-project}{%
+\subsection{\texorpdfstring{\textbf{MULTI-TABLE SURVEY
+PROJECT}}{MULTI-TABLE SURVEY PROJECT}}\label{multi-table-survey-project}}
+
+\hypertarget{the-survey-was-designed-and-published-to-classmates-and-linkedin-participants-using-surveymonkey}{%
+\paragraph{\texorpdfstring{The survey was designed and published to
+classmates and Linkedin participants using
+\textbf{SurveyMonkey}}{The survey was designed and published to classmates and Linkedin participants using SurveyMonkey}}\label{the-survey-was-designed-and-published-to-classmates-and-linkedin-participants-using-surveymonkey}}
+
+\hypertarget{the-netflix-data-was-provided-by-httpswww.kaggle.com}{%
+\paragraph{\texorpdfstring{The NETFLIX data was provided by
+\textbf{\url{https://www.kaggle.com/}}}{The NETFLIX data was provided by https://www.kaggle.com/}}\label{the-netflix-data-was-provided-by-httpswww.kaggle.com}}
+
+\hypertarget{you-can-participate-in-the-survey-by-clicking-on-this-link-httpswww.surveymonkey.comrrgwg7q7}{%
+\subparagraph{\texorpdfstring{You can participate in the survey by
+clicking on this link
+\textbf{\url{https://www.surveymonkey.com/r/RGWG7Q7}}}{You can participate in the survey by clicking on this link https://www.surveymonkey.com/r/RGWG7Q7}}\label{you-can-participate-in-the-survey-by-clicking-on-this-link-httpswww.surveymonkey.comrrgwg7q7}}
+
+\hypertarget{the-native-surveymonkey-results-can-be-viewed-with-this-link-note-that-the-project-database-updates-are-manual-httpswww.surveymonkey.comstoriessm-lbngf732}{%
+\subparagraph{\texorpdfstring{The native SurveyMonkey results can be
+viewed with this link (\textbf{Note} that the project database updates
+are manual)
+\textbf{\url{https://www.surveymonkey.com/stories/SM-LBNGF732/}}}{The native SurveyMonkey results can be viewed with this link (Note that the project database updates are manual) https://www.surveymonkey.com/stories/SM-LBNGF732/}}\label{the-native-surveymonkey-results-can-be-viewed-with-this-link-note-that-the-project-database-updates-are-manual-httpswww.surveymonkey.comstoriessm-lbngf732}}
+
+~
+
+\hypertarget{the-github-repository-for-this-project-is-located-here}{%
+\subparagraph{\texorpdfstring{\textbf{The GitHub Repository for this
+project is located
+here:}}{The GitHub Repository for this project is located here:}}\label{the-github-repository-for-this-project-is-located-here}}
+
+\hypertarget{httpsgithub.comtagensinghsps-data607-assignment-2.git}{%
+\subparagraph{\texorpdfstring{\url{https://github.com/tagensingh/SPS-DATA607-ASSIGNMENT-2.git}}{https://github.com/tagensingh/SPS-DATA607-ASSIGNMENT-2.git}}\label{httpsgithub.comtagensinghsps-data607-assignment-2.git}}
+
+~
+
+\hypertarget{the-steps-to-build-this-project-database-are-as-follows}{%
+\subsubsection{\texorpdfstring{\textbf{The steps to build this project
+database are as
+follows:}}{The steps to build this project database are as follows:}}\label{the-steps-to-build-this-project-database-are-as-follows}}
+
+\#All required files are in the GitHub Repository provided above.
+
+\hypertarget{create-a-mysql-schema-called-shows-by-executing-the-1-create-shows.sql-script-from-within-the-mysql-dbms}{%
+\subparagraph{\texorpdfstring{1. Create a MySQL schema called
+\textbf{``shows''} by executing the \textbf{``1-create-shows.sql''}
+script from within the MySQL
+DBMS}{1. Create a MySQL schema called ``shows'' by executing the ``1-create-shows.sql'' script from within the MySQL DBMS}}\label{create-a-mysql-schema-called-shows-by-executing-the-1-create-shows.sql-script-from-within-the-mysql-dbms}}
+
+\hypertarget{copy-the-following-files-to-the---cserver-8.0--directory.this-is-the-directory-where-your-dbms-would-create-the-datails-for-the-shows-database-from-the-script-above---1-data-add-survey-all.csv---and---1-netflix-shows-ratings-all.csv}{%
+\subparagraph{\texorpdfstring{2. Copy the following files to the -
+C:\ProgramData\MySQL\MySQL Server 8.0\Data\shows- directory.(This is the
+directory where your DBMS would create the datails for the `shows'
+database from the script above) - \textbf{1-data-add-survey-all.csv} -
+and -
+\textbf{1-netflix-shows-ratings-all.csv}}{2. Copy the following files to the - C:Server 8.0- directory.(This is the directory where your DBMS would create the datails for the `shows' database from the script above) - 1-data-add-survey-all.csv - and - 1-netflix-shows-ratings-all.csv}}\label{copy-the-following-files-to-the---cserver-8.0--directory.this-is-the-directory-where-your-dbms-would-create-the-datails-for-the-shows-database-from-the-script-above---1-data-add-survey-all.csv---and---1-netflix-shows-ratings-all.csv}}
+
+\hypertarget{create-the-tables-survey-netflixratings-and-populate-them-by-executing-the-script-1-add-records-shows-all.sql}{%
+\subparagraph{\texorpdfstring{3. Create the tables \textbf{``survey''},
+\textbf{``netflixratings''} and populate them by executing the script
+\textbf{``1-add-records-shows-all.sql''}}{3. Create the tables ``survey'', ``netflixratings'' and populate them by executing the script ``1-add-records-shows-all.sql''}}\label{create-the-tables-survey-netflixratings-and-populate-them-by-executing-the-script-1-add-records-shows-all.sql}}
+
+\#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\#\textbf{THE DATABASE IS READY FOR USE}
+
+\#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+~
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tidyverse' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tibble' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'readr' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'forcats' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'RMySQL' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'DBI' was built under R version 4.0.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mydb =}\StringTok{ }\KeywordTok{dbConnect}\NormalTok{(}\KeywordTok{MySQL}\NormalTok{(),}\DataTypeTok{user=}\StringTok{'localtest'}\NormalTok{,}\DataTypeTok{password=}\StringTok{'Localtest!'}\NormalTok{,}\DataTypeTok{dbname=}\StringTok{'shows'}\NormalTok{,}\DataTypeTok{host=}\StringTok{'localhost'}\NormalTok{)}
+
+\KeywordTok{dbListTables}\NormalTok{(mydb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "netflixratings" "survey"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{rs =}\StringTok{ }\KeywordTok{dbSendQuery}\NormalTok{(mydb, }\StringTok{"SELECT * FROM survey"}\NormalTok{)}
+
+\NormalTok{data =}\StringTok{ }\KeywordTok{fetch}\NormalTok{(rs)}
+
+\CommentTok{#dbListFields(mydb, 'survey')}
+
+\KeywordTok{summary}\NormalTok{ (data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     Question        title           Sorry-I did NOT see this one.
+##  Min.   : 1.00   Length:10          Min.   :12.00                
+##  1st Qu.: 3.25   Class :character   1st Qu.:17.25                
+##  Median : 5.50   Mode  :character   Median :20.50                
+##  Mean   : 5.50                      Mean   :20.60                
+##  3rd Qu.: 7.75                      3rd Qu.:24.50                
+##  Max.   :10.00                      Max.   :29.00                
+##  Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied
+##  Min.   :0.0       Min.   :0.00   Min.   :1.0                       
+##  1st Qu.:0.0       1st Qu.:0.00   1st Qu.:1.0                       
+##  Median :0.0       Median :0.00   Median :1.5                       
+##  Mean   :0.5       Mean   :0.80   Mean   :1.8                       
+##  3rd Qu.:1.0       3rd Qu.:0.75   3rd Qu.:2.0                       
+##  Max.   :2.0       Max.   :4.00   Max.   :4.0                       
+##    Satisfied    Very satisfied      Total      Total Responses
+##  Min.   :1.00   Min.   : 0.00   Min.   :32.0   Min.   :34     
+##  1st Qu.:3.25   1st Qu.: 2.25   1st Qu.:33.0   1st Qu.:34     
+##  Median :6.00   Median : 4.00   Median :34.0   Median :34     
+##  Mean   :4.90   Mean   : 4.90   Mean   :33.5   Mean   :34     
+##  3rd Qu.:7.00   3rd Qu.: 5.00   3rd Qu.:34.0   3rd Qu.:34     
+##  Max.   :7.00   Max.   :14.00   Max.   :34.0   Max.   :34     
+##  Missing Responses Last Update       
+##  Min.   :0.0       Length:10         
+##  1st Qu.:0.0       Class :character  
+##  Median :0.0       Mode  :character  
+##  Mean   :0.5                         
+##  3rd Qu.:1.0                         
+##  Max.   :2.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{rs =}\StringTok{ }\KeywordTok{dbSendQuery}\NormalTok{(mydb, }\StringTok{"SELECT * FROM netflixratings"}\NormalTok{)}
+
+\NormalTok{data =}\StringTok{ }\KeywordTok{fetch}\NormalTok{(rs)}
+
+\CommentTok{#dbListFields(mydb, 'netflixratings')}
+
+\KeywordTok{tibble}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 487 x 7
+##    title rating ratingLevel ratingDescripti~ `release year` `user rating sc~
+##    <chr> <chr>  <chr>                  <int>          <int>            <int>
+##  1 10 T~ PG-13  adult cont~               80           1999               68
+##  2 100 ~ TV-MA  For mature~              110           2016                0
+##  3 30 R~ TV-14  Parents st~               90           2012               66
+##  4 5 to~ R      some sexua~              100           2014                0
+##  5 A Mo~ PG     some actio~               60           2011                0
+##  6 A We~ TV-MA  For mature~              110           2016                0
+##  7 Abso~ TV-14  Parents st~               90           2012               59
+##  8 Abst~ TV-14  0                         90           2017                0
+##  9 Agen~ PG     Parental g~               60           2014                0
+## 10 Air ~ G      General Au~               35           2003                0
+## # ... with 477 more rows, and 1 more variable: `user rating size` <int>
+\end{verbatim}
+
+\end{document}

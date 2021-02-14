@@ -1,7 +1,6 @@
 title,rating,ratingLevel,ratingDescription,release year,user rating score,user rating size
 10 Things I Hate About You,PG-13,"adult content, adult language and mild violence",80,1999,68,80
 100 Metros,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2016,0,82
-13 Reasons Why,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2017,99,80
 30 Rock,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2012,66,80
 5 to 7,R,some sexual material,100,2014,0,82
 A Monster in Paris,PG,"some action violence involving gunplay, and mild rude humor",60,2011,0,82
@@ -25,7 +24,6 @@ An American Tail,G,General Audiences. Suitable for all ages.,35,1986,67,80
 An American Tail: Fievel Goes West,G,General Audiences. Suitable for all ages.,35,1991,0,82
 An American Tail: The Mystery of the Night Monster,G,General Audiences. Suitable for all ages.,35,1999,0,82
 An Extremely Goofy Movie,G,General Audiences. Suitable for all ages.,35,1999,67,80
-Anastasia,G,General Audiences. Suitable for all ages.,35,1997,93,80
 Angry Birds,TV-G,Suitable for all ages.,35,2013,0,82
 Animaniacs,TV-Y7,Suitable for children ages 7 and older,41,1997,72,80
 Annie,PG,adult content and mld violence,60,1982,68,80
@@ -70,6 +68,7 @@ Boy Bye,TV-MA,0,110,2016,0,82
 Breaking Bad,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2013,97,80
 Breakout Kings,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2012,88,80
 Brickleberry,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2014,63,80
+Bridgerton,TV-MA,0,110,2020,96,80
 Brother Bear 2,G,General Audiences. Suitable for all ages.,35,2006,57,80
 Buddy Thunderstruck,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2017,0,82
 Bunk'd,TV-G,Suitable for all ages.,35,2016,61,80
@@ -119,7 +118,6 @@ Dolphin Tale,PG,some mild thematic elements,60,2011,0,82
 Don't Trust the B---- in Apartment 23,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2012,0,82
 Dope,R,"language, drug content, sexuality/nudity, and some violence-all involving teens",100,2015,79,80
 Dr. Dolittle: Tail to the Chief,PG,brief mild language and some rude behavior,60,2008,0,82
-Dragons: Race to the Edge,TV-Y7-FV,Suitable for children ages 7 and older.  Content contains fantasy violence.,42,2017,88,80
 DreamWorks How to Train Your Dragon Legends,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2011,0,82
 DreamWorks Kung Fu Panda Awesome Secrets,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2008,0,82
 DreamWorks Shrek's Swamp Stories,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2008,56,80
@@ -145,7 +143,6 @@ Friday Night Lights,TV-PG,Parental guidance suggested. May not be suitable for a
 Fried,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2015,0,82
 Friends,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2003,98,80
 Friends with Benefits,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2011,0,82
-Fuller House,TV-G,Suitable for all ages.,35,2016,90,80
 Gilmore Girls,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2006,91,80
 Gilmore Girls: A Year in the Life,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2016,77,80
 Girlboss,TV-MA,0,110,2017,94,80
@@ -164,6 +161,7 @@ Growing Up Wild,G,0,35,2016,80,80
 H2O: Just Add Water,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2009,74,80
 Halt and Catch Fire,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2016,0,82
 Hannah Montana: The Movie,G,General Audiences. Suitable for all ages.,35,2009,56,80
+Hannibal,R,"strong crude sexual content, pervasive language, and drug use",35,2013,90,80
 Hap and Leonard,TV-MA,0,110,2016,57,80
 Happily Married,TV-14,0,90,2015,0,82
 Harry and the Hendersons,PG,Parental guidance suggested. May not be suitable for children.,60,1987,58,80
@@ -190,7 +188,6 @@ Hunter X Hunter (2011),NR,This movie has not been rated.,124,2013,57,80
 Hurricane Bianca,TV-MA,0,110,2016,0,82
 Hyena Road,R,"bloody war violence, language throughout and some sexual material",100,2015,0,82
 I.T,NR,0,124,2016,0,82
-Ingobernable,TV-MA,0,110,2017,96,80
 Inside Russia's Toughest Prison,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2011,0,82
 Inspector Gadget 2,G,General Audiences. Suitable for all ages.,35,2003,0,82
 Iron Man & Captain America: Heroes United,PG,"action and violence throughout, and mild language",60,2014,0,82
@@ -285,6 +282,7 @@ Only for One Night,TV-MA,0,110,2016,78,80
 Open Season: Scared Silly,PG,rude humor and some action,60,2015,72,80
 Orange Is the New Black,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2016,98,80
 Oscar's Oasis,TV-G,Suitable for all ages.,35,2011,0,82
+Ozark,R,"strong crude sexual content, pervasive language, and drug use",35,2017,93,80
 Pac-Man and the Ghostly Adventures,TV-Y7,Suitable for children ages 7 and older,41,2014,0,82
 Paddington,PG,mild action and rude humor,60,2014,70,80
 Pandora,TV-MA,0,110,2016,0,82
@@ -407,6 +405,7 @@ The Girl in the Book,TV-MA,For mature audiences.  May not be suitable for childr
 The Great British Baking Show,TV-PG,Parental guidance suggested. May not be suitable for all children.,70,2016,94,80
 The Great Gilly Hopkins,PG,for thematic material and language,60,2016,69,80
 The Gruffalo,TV-Y,Suitable for all ages.,10,2009,0,82
+The Haunting of Bly Manor,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,42,2020,88,80
 The Hero of Color City,G,General Audiences. Suitable for all ages.,35,2014,0,82
 The Honorable Woman,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2014,0,82
 The Hunter,R,language and brief violence,100,2011,0,82
@@ -433,6 +432,7 @@ The Originals,TV-14,Parents strongly cautioned. May be unsuitable for children a
 The Pacifier,PG,"action violence, language and rude humor",60,2005,91,80
 The Pirate Fairy,G,General Audiences. Suitable for all ages.,35,2014,57,80
 The Prince of Egypt,PG,intense scenes dealing with strong content,60,1998,81,80
+The Queen's Gambit,TV-MA,For mature audiences.  May not be suitable for children 17 and under.,110,2020,97,80
 The Real Ghostbusters,TV-Y7,Suitable for children ages 7 and older,41,1990,65,80
 The Returned,TV-14,Parents strongly cautioned. May be unsuitable for children ages 14 and under.,90,2015,0,82
 The Road to El Dorado,PG,mild thematic material and language,60,2000,91,80

@@ -9,9 +9,9 @@ output: html_document
 
 ```{r load-packages, message=FALSE}
 
-install.packages("pacman",repos = "http://cran.us.r-project.org")
+install.packages(c('dplyr','RMySQL','config',repos = "http://cran.us.r-project.org"))
 
-pacman::p_load(dplyr,tidyr,RMySQL,config)
+
 
 library(RMySQL,dplyr,tidyr)
 

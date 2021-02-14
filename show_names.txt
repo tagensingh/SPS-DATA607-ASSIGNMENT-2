@@ -1,0 +1,24 @@
+The Queen's Gambit
+Breaking Bad
+Bridgerton
+Sherlock
+Ozark
+Hannibal
+The Haunting of Bly Manor
+Collateral
+Community
+Schitt's Creek
+
+
+
+Field Names - Survey
+
+Question,title,Sorry-I did NOT see this one.,Very dissatisfied,Dissatisfied,Neither satisfied nor dissatisfied,Satisfied,Very satisfied,Total,Total Responses,Missing Responses,Last Update
+
+
+Field Names - netflixratings
+
+title,rating,ratingLevel,ratingDescription,release year,user rating score,user rating size
+
+
+
