@@ -1,0 +1,128 @@
+---
+title: "SPS-DATA607-ASSIGNMENT-2-RESULTS"
+author: "Tage N Singh"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+###**This page provides some sample code and outputs for the Multi-Table Project**
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,load-requirements,echo=FALSE,message=FALSE}
+library(datasets)
+library(ggplot2)
+library(dplyr)
+library("tidyverse")
+library(RMySQL)
+```
+
+```{r message=TRUE, warning=TRUE}
+mydb = dbConnect(MySQL(),user='localtest',password='Localtest!',dbname='shows',host='localhost')
+
+#**Note** that the credentials are local to this implementation of MySQL
+
+dbListTables(mydb)
+```
+
+```{r,forsurvey}
+
+rs = dbSendQuery(mydb, "SELECT * FROM survey")
+
+data = fetch(rs)
+
+df1 <- data.frame(data)
+
+tibble (df1)
+
+```
+
+```{r,fornetflixratings}
+
+rs = dbSendQuery(mydb, "SELECT * FROM netflixratings")
+
+data = fetch(rs)
+
+df2 <- data.frame(data)
+
+tibble(df2)
+
+```
+
+The Following Query uses a **LEFT JOIN** to demonstrate the fields from the survey table that do not have a value in the netflixratings table will be part of the resultant dataset.
+
+```{r,query1}
+
+rs = dbSendQuery(mydb, "SELECT survey.title,
+survey.`Very satisfied`,
+survey.`Satisfied`,
+survey.`Neither satisfied nor dissatisfied`,
+survey.`Dissatisfied`,
+survey.`Very dissatisfied`,
+survey.`did not see this one`,
+netflixratings.`rating`,
+netflixratings.`release year`,
+netflixratings.`ratingDescription`
+FROM survey LEFT JOIN netflixratings ON (survey.title = netflixratings.title);")
+
+
+data = fetch(rs,n=50)
+
+df3 <- data.frame(data)
+
+tibble(df3)
+
+```
+The Following Query uses a **INNER JOIN** to demonstrate the fields from the survey table that do not have a value in the netflixratings table will *NOT* be part of the resultant dataset
+
+```{r,query2}
+rs = dbSendQuery(mydb, "SELECT survey.title,
+survey.`Very satisfied`,
+survey.`Satisfied`,
+survey.`Neither satisfied nor dissatisfied`,
+survey.`Dissatisfied`,
+survey.`Very dissatisfied`,
+survey.`did not see this one`,
+netflixratings.`rating`,
+netflixratings.`release year`,
+netflixratings.`ratingDescription`
+FROM survey INNER JOIN netflixratings ON (survey.title = netflixratings.title);")
+
+data = fetch(rs,n=50)
+
+df4 <- data.frame(data)
+
+tibble(df4)
+
+```
+
+```{r,query3}
+rs = dbSendQuery(mydb, "SELECT * from survey")
+
+data = fetch(rs,n=50)
+
+df5 <- data.frame(data)
+
+tibble(df5)
+
+```
+Another Query converted to a dataframe showing the INNER JOIN feature of the table join
+```{r,query4}
+rs = dbSendQuery(mydb, "SELECT survey.title,
+survey.`Very satisfied`,
+survey.`Total Responses`,
+netflixratings.`user rating score`
+FROM survey INNER JOIN netflixratings ON (survey.title = netflixratings.title);")
+
+data = fetch(rs,n=50)
+
+df6 <- data.frame(data)
+
+tibble(df6)
+
+```
+### This marks the End of this Test Project
